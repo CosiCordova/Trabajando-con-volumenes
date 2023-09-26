@@ -24,3 +24,10 @@ Todos los pasos anteriores los he realizado en el code al ofrecer la terminal, l
 ### 8. Crea otro contenedor 'asir_web2' con el mismo volumen y a otro puerto, por ejemplo 9080.
 
 Para esto solo hace falta cambiearle al comando anterior el nombre del contenedor y del puerto de la siguinete forma: docker run -dit --name asir_web2 -p 9080:80 -v /home/asir2/Desktop/Apache/Paginas:/usr/local/apache2/htdocs httpd:2.4
+
+### 9. Comprueba que los dos servidores 'sirven' la misma página, es decir, cuando consultamos en el navegador:
+### 10. Tienen que salir la misma página web
+###    http://localhost:9080 
+###   http://localhost:8000
+
+Al consultar en el navegador me aparecen perfectamente la misma pagina desde cualquiera de los dos puertos. 
